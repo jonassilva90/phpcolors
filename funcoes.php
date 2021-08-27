@@ -48,7 +48,7 @@ function invertColor($color)
     $blue = substr($color, 5, 2);
 
     $x = (hexdec($red) + hexdec($green) + hexdec($blue)) / 3;
-    $x = intval($x) > 127 ? 0 : 255;
+    $x = intval($x) > 170 ? 0 : 255;
 
 
     $color = '#' . str_pad(dechex($x), 2, "0", STR_PAD_LEFT);
